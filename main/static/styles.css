@@ -1,0 +1,31 @@
+html {
+  margin: 0;
+  background-color: #222;
+}
+html h1 {
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 75;
+  text-align: center;
+  color: #fefefe;
+}
+html h2 {
+  color: #fefefe;
+  text-align: center;
+}
+html .btn-new button {
+  text-align: center;
+  transition: 0.5s;
+  background-size: 200% auto;
+  color: white;
+  box-shadow: 0 0 20px #eee;
+  border-radius: 10px;
+  margin: 0 auto;
+  display: block;
+}
+html .btn-new button:hover {
+  background-position: right center;
+}
+form label {
+  text-align: center;
+  color: #fefefe;
+}

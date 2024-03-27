@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="static/styles.css">
+    <title>Smart Home Control</title>
+</head>
+<body>
+    <h1>Smart Home Control</h1>
+    
+    <h2>Lights</h2>
+    <form action="/toggle_lights" method="post">
+        <button type="submit">{% if lights %}Turn Off{% else %}Turn On{% endif %}</button>
+    </form>
+    
+    <h2>Thermostat</h2>
+    <form action="/set_thermostat" method="post">
+        <label for="temperature">Set Temperature:</label>
+        <input type="text" name="temperature" id="temperature" value="{{ thermostat }}">
+        <button type="submit">Set</button>
+    </form>
+</body>
+</html>
